@@ -10,7 +10,7 @@ before do
  @throws = @defeat.keys
 end
 get '/throw/:type' do
- # the params[] hash stores querystring and form data.
+ # the params[] hash stores querystring and form data...
  player_throw = params[:type].to_sym
  # in the case of a player providing a throw that is not valid,
  # we halt with a status code of 403 (Forbidden) and let them
